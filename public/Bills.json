@@ -1,0 +1,112 @@
+[
+    {
+      "id": 1,
+      "bill_type": "electricity",
+      "icon": "https://i.ibb.co/kV4Mkd73/desco.png",
+      "organization": "DESCO",
+      "amount": 1890,
+      "duedate": "2025-06-10T06:00:00.000Z",
+      "img1":"https://i.ibb.co/gb4NYH6d/electricity.png"
+    },
+    {
+      "id": 2,
+      "bill_type": "gas",
+      "icon": "https://i.ibb.co/23VLXCyS/Titas.png",
+      "organization": "Tista",
+      "amount": 1488,
+      "duedate": "2025-06-05T06:00:00.000Z",
+      "img1":"https://i.ibb.co/xR5qqZp/icons8-gas-50-1.png"
+    },
+    {
+      "id": 3,
+      "bill_type": "internet",
+      "icon": "https://i.ibb.co/j9c0xRvW/images-2.png",
+      "organization": "Link3",
+      "amount": 1200,
+      "duedate": "2025-06-01T06:00:00.000Z",
+      "img1":"https://i.ibb.co/vvQ6sw8c/icons8-internet-48.png"
+    },
+    {
+      "id": 4,
+      "bill_type": "water",
+      "icon": "https://i.ibb.co/F4QBN1CY/wasa.png",
+      "organization": "WASA",
+      "amount": 980,
+      "duedate": "2025-06-03T06:00:00.000Z",
+      "img1":"https://i.ibb.co/Q7sWvJK6/icons8-water-40.png"
+    },
+    {
+      "id": 5,
+      "bill_type": "credit card bill",
+      "icon": "https://i.ibb.co/PvynV7B2/images-2.jpg",
+      "organization": "DBBL",
+      "amount": 3500,
+      "duedate": "2025-06-15T06:00:00.000Z",
+      "img1":"https://i.ibb.co/xKsSx2S6/icons8-credit-card-48.png"
+    },
+    {
+      "id": 6,
+      "bill_type": "tuition",
+      "icon": "https://i.ibb.co/ch66RjLV/images-1.png",
+      "organization": "DIU",
+      "amount": 1500,
+      "duedate": "2025-06-20T06:00:00.000Z",
+      "img1":"https://i.ibb.co/WN6Swp5n/icons8-tuition-64.png"
+    },
+    {
+      "id": 7,
+      "bill_type": "electricity",
+      "icon": "https://i.ibb.co/HTRSJPwd/198170-113.jpg",
+      "organization": "PDB",
+      "amount": 1720,
+      "duedate": "2025-06-11T06:00:00.000Z",
+       "img1":"https://i.ibb.co/gb4NYH6d/electricity.png"
+    },
+    {
+      "id": 8,
+      "bill_type": "gas",
+      "icon": "https://i.ibb.co/HpCws3Lr/bakhrabad-gas-system-ltd.jpg",
+      "organization": "Bakhrabad Gas",
+      "amount": 1525,
+      "duedate": "2025-06-07T06:00:00.000Z",
+      "img1":"https://i.ibb.co/xR5qqZp/icons8-gas-50-1.png"
+    },
+    {
+      "id": 9,
+      "bill_type": "internet",
+      "icon": "https://i.ibb.co/vyFfbgh/banglalion.jpg",
+      "organization": "Banglalion",
+      "amount": 890,
+      "duedate": "2025-06-02T06:00:00.000Z",
+      "img1":"https://i.ibb.co/vvQ6sw8c/icons8-internet-48.png"
+    },
+    {
+      "id": 10,
+      "bill_type": "credit card bill",
+      "icon": "https://i.ibb.co/tkyzvwL/citybank.png",
+      "organization": "City Bank",
+      "amount": 4250,
+      "duedate": "2025-06-13T06:00:00.000Z",
+      "img1":"https://i.ibb.co/xKsSx2S6/icons8-credit-card-48.png"
+    },
+    {
+        "id": 11,
+        "bill_type": "electricity",
+        "icon": "https://i.ibb.co/yFncnsS3/nesco.png",
+        "organization": "NESCO",
+        "amount": 1985,
+        "duedate": "2025-06-12T06:00:00.000Z",
+         "img1":"https://i.ibb.co/gb4NYH6d/electricity.png"
+      },
+      {
+        "id": 12,
+        "bill_type": "internet",
+        "icon": "https://i.ibb.co/999msy4L/akash.png",
+        "organization": "Akash",
+        "amount": 950,
+        "duedate": "2025-06-09T06:00:00.000Z",
+        "img1":"https://i.ibb.co/vvQ6sw8c/icons8-internet-48.png"
+        
+      }
+  ]
+  

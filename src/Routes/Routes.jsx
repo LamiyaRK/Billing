@@ -8,6 +8,7 @@ import Register from "../Components/Register";
 import PrivateRoute from "../ContexApi/PrivateRoute";
 import UserInfo from "../Components/UserInfo";
 import Updateinfo from "../Components/Updateinfo";
+import Error from "../Components/Error";
 
 const router=createBrowserRouter([
     {
@@ -45,11 +46,14 @@ const router=createBrowserRouter([
             {
                 path:'/updateInfo',
                 Component:Updateinfo
-            }
+            },
+            
         ]
     },
     {
-        path:"/login"
+        path:'*',
+        element:<Error></Error>
     }
+    
 ])
 export {router}

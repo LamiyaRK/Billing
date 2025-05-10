@@ -15,14 +15,14 @@ const BillCardDetails = () => {
  const {money,setMoney,user,adata,setAdata}=use(AuthContext)
  const {bill_type,icon,organization,amount,duedate,img1}=mdata[0]
  const handleAmount=()=>{
-    console.log(user.email)
+    
   const res=setData(user.email,amount)
- console.log(res)
+
   if(res)
 { 
     setMoney(getData(user.email))
     
-    console.log(adata)
+    
     toast("Payment Successful",{
         theme:'colored',
         type:'success'

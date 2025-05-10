@@ -1,11 +1,11 @@
 import React, { use } from 'react';
 import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../ContexApi/AuthProvider';
-import { ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import { getData } from './handleAmount';
 
 const Navb = () => {
-  const {user,logOut,money,setMoney}=use(AuthContext)
+  const {user,logOut}=use(AuthContext)
     
     const list=<div className='text-lg font-medium flex gap-5 '>
       <NavLink to='/'> <p>Home</p></NavLink>
@@ -18,7 +18,10 @@ const Navb = () => {
     const amount = user ? getData(user.email) : 0;
     const handleLogout=()=>{
       logOut().then(()=>
-        alert("Logout successful")
+       toast("Logout successful",{
+        theme:'colored',
+        type:'success'
+       })
       ).catch(error=>
         console.log(error)
       )

@@ -7,7 +7,7 @@ const Login = () => {
     const [err,setErr]=useState('')
     const loc=useLocation();
     const navigate=useNavigate()
-    const {signIn,setUser}=use(AuthContext)
+    const {signIn,setUser,gRegister}=use(AuthContext)
     const handleLogin=e=>{
         e.preventDefault();
         const email=e.target.email.value;
@@ -19,6 +19,15 @@ const Login = () => {
         }).
         catch(error=>setErr(error));
          
+    }
+     const hRegister=()=>{
+
+        gRegister().then(res=>{
+            setUser(res.user)
+            navigate(loc.state?loc.state:'/')
+        })
+        .catch(error=>setErr(error))
+        
     }
     return (
         <div >
@@ -33,7 +42,7 @@ const Login = () => {
           <input type="password" className="input" placeholder="Password" name='password' />
           <div><a className="link link-hover">Forgot password?</a></div>
           <button className="btn btn-neutral mt-4" value='submit'>Login</button>
-           <button className="btn btn-neutral mt-4"><FaGoogle />Login with Google</button>
+           <button className="btn btn-neutral mt-4" onClick={hRegister}><FaGoogle />Login with Google</button>
         {   err&&<p className='btn btn-error '>{err.message}</p>}
           <p >Don't have any accout?<Link to='/register' className='text-info font-semibold  border-b-2'>Register</Link></p>
         </form>

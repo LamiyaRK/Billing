@@ -7,7 +7,7 @@ const Register = () => {
     const [err,setErr]=useState('')
     const loc=useLocation();
     const navigate=useNavigate()
-    const {cRegister,setUser,updateUserInfo}=use(AuthContext)
+    const {cRegister,setUser,updateUserInfo,gRegister}=use(AuthContext)
     const handleRegister=e=>{
         e.preventDefault();
         const name=e.target.name.value;
@@ -28,6 +28,15 @@ const Register = () => {
        })
        .catch(error=>setErr(error))
     }
+    const hRegister=()=>{
+
+        gRegister().then(res=>{
+            setUser(res.user)
+        })
+        .catch(error=>setErr(error))
+        navigate(loc.state?loc.state:'/')
+    }
+    
     return (
         <div>
            <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto my-40">
@@ -45,7 +54,7 @@ const Register = () => {
               pattern="(?=.*[a-z])(?=.*[A-Z]).{6,}" required />
               
               <button className="btn btn-neutral mt-4" value='submit'>Register</button>
-              <button className="btn btn-neutral mt-4"><FaGoogle /> Register with Google</button>
+              <button className="btn btn-neutral mt-4" onClick={hRegister}><FaGoogle /> Register with Google</button>
               {   err&&<p className='btn btn-error'>{err.message}</p>}
               <p >Already have an account?<Link to='/login' className='text-info font-semibold  border-b-2'>Login</Link></p>
             </form>

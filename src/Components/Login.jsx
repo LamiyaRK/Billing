@@ -2,12 +2,13 @@ import React, { use, useState } from 'react';
 import { FaGoogle } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../ContexApi/AuthProvider';
+import { toast } from 'react-toastify';
 
 const Login = () => {
     const [err,setErr]=useState('')
     const loc=useLocation();
     const navigate=useNavigate()
-    const {signIn,setUser,gRegister}=use(AuthContext)
+    const {signIn,setUser,gRegister,forPass}=use(AuthContext)
     const handleLogin=e=>{
         e.preventDefault();
         const email=e.target.email.value;
@@ -29,6 +30,22 @@ const Login = () => {
         .catch(error=>setErr(error))
         
     }
+  const handleForgetPass = () => {
+  const email = document.querySelector("input[name='email']").value;
+  if (!email) {
+    toast("Please enter your email first");
+    return;
+  }
+
+  forPass(email)
+    .then(() => {
+      toast("Password reset email sent!");
+    })
+    .catch((error) => {
+      toast(`Error: ${error.message}`);
+    });
+};
+
     return (
         <div >
         
@@ -40,7 +57,7 @@ const Login = () => {
           <input type="email" className="input" placeholder="Email" name='email'/>
           <label className="label">Password</label>
           <input type="password" className="input" placeholder="Password" name='password' />
-          <div><a className="link link-hover">Forgot password?</a></div>
+          <div><button className='btn' onClick={handleForgetPass}>Forgot password?</button></div>
           <button className="btn btn-neutral mt-4" value='submit'>Login</button>
            <button className="btn btn-neutral mt-4" onClick={hRegister}><FaGoogle />Login with Google</button>
         {   err&&<p className='btn btn-error '>{err.message}</p>}

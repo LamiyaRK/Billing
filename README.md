@@ -1,12 +1,35 @@
-# React + Vite
+# 🧾 BillEase - Online Bill Payment Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔍 Project Purpose
 
-Currently, two official plugins are available:
+BillEase is a responsive web application that allows users to securely log in, view various types of bills (electricity, gas, water, tuition, etc.), and pay them online. It supports Google Sign-In and traditional email/password authentication.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live URL
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[🔗 Visit Live Site](https://your-live-url.com)
+
+---
+
+## 🚀 Key Features
+
+- ✅ User authentication using Firebase
+- ✅ Google Sign-In integration
+- ✅ Forgot password functionality
+- ✅ Dynamic bill filtering based on category
+- ✅ Real-time UI updates using React state
+- ✅ Toast notifications for feedback
+- ✅ Mobile-responsive design
+
+---
+
+## 📦 NPM Packages Used
+
+- **firebase** – Authentication and backend support
+- **react-router** – Routing within the app
+- **react-toastify** – Toast notifications
+- **react-icons** – Icon support (Google icon, etc.)
+- **tailwindcss / daisyUI** – UI styling and utility classes
+
+---

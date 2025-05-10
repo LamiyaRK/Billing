@@ -42,6 +42,7 @@ const Register = () => {
            <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto my-40">
           
           <div className="card-body">
+          <h1 className='text-center text-2xl'>Register</h1>
             <form className="fieldset" onSubmit={handleRegister} >
             <label className="label">Name</label>
               <input type="text" className="input" placeholder="Enter your name" name='name' required/>
@@ -56,7 +57,7 @@ const Register = () => {
               <button className="btn btn-neutral mt-4" value='submit'>Register</button>
               <button className="btn btn-neutral mt-4" onClick={hRegister}><FaGoogle /> Register with Google</button>
               {   err&&<p className='btn btn-error'>{err.message}</p>}
-              <p >Already have an account?<Link to='/login' className='text-info font-semibold  border-b-2'>Login</Link></p>
+              <p >Already have an account?<Link to='/login'  className='text-info font-semibold  border-b-2'>Login</Link></p>
             </form>
           </div>
         </div>   

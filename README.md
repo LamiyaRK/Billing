@@ -21,6 +21,8 @@ BillEase is a responsive web application that allows users to securely log in, v
 - ✅ Real-time UI updates using React state
 - ✅ Toast notifications for feedback
 - ✅ Mobile-responsive design
+- ✅ Responsive image/content slider using SliderJS
+
 
 ---
 
@@ -31,5 +33,5 @@ BillEase is a responsive web application that allows users to securely log in, v
 - **react-toastify** – Toast notifications
 - **react-icons** – Icon support (Google icon, etc.)
 - **tailwindcss / daisyUI** – UI styling and utility classes
-
+- **sliderjs** – For implementing image or content sliders/carousels
 ---

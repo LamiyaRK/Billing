@@ -63,7 +63,7 @@ const Navb = () => {
   </ul>
 </div>
    
-</div>:<div className='flex gap-3'>
+</div>:<div className='flex flex-col md:flex-row gap-3'>
   <Link to='/login' className="btn bg-primary btn-outline border-accent text-white">Login</Link>
   <Link to='/register' className="btn bg-primary btn-outline border-accent text-white">Register</Link>
 </div>

@@ -51,7 +51,7 @@ const Cardgrid = () => {
         <div className='w-11/12 mx-auto text-center space-y-4 '>
           <h1 className='text-4xl font-bold'>Supported Utility & Service Partners</h1>
           <p className='text-xl font-semibold'>Easily pay your utility, internet, gas, and TV bills through our trusted partner organizations — all in one place.</p>
-        <div className=' grid grid-cols-3 gap-3'>
+        <div className=' grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3'>
       
             {
                 data.map(da=><Card key={da.id} da={da}></Card>)

@@ -4,7 +4,7 @@ const Card = ({da}) => {
     const {name,logo,category,description}=da
     return (
         <div>
-            <div class="card bg-primary h-full shadow-sm p-3 text-accent">
+            <div class="card bg-primary  h-full shadow-sm p-3 text-accent">
   <figure>
     <img
       src={logo}

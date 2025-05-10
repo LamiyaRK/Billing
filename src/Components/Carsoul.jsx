@@ -33,7 +33,7 @@ const Carsoul = () => {
 ]
   return (
     
-    <div className='w-[500px]   mx-auto my-10'>
+    <div className='w-[300px] md:w-[500px]   mx-auto my-10'>
      <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}

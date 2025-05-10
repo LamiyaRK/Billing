@@ -39,7 +39,7 @@ const BillCardDetails = () => {
  }
  
     return (
-        <div className='flex bg-primary text-accent p-4 gap-10 justify-center items-center my-10  mx-auto max-w-xl '>
+        <div className='w-11/12 mx-auto flex flex-col md:flex-row bg-primary text-accent p-4 gap-10 justify-center items-center my-10  mx-auto max-w-xl '>
            <div className='relative w-50'>
           <img src={icon} className='w-60 border-2 relative'/> 
           <img src={img1} className='w-15  absolute bottom-0 right-0 '/>

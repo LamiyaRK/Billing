@@ -7,7 +7,7 @@ const Service = () => {
             <h1 className='text-4xl font-bold '>Our Services at Your Fingertips</h1>
             <p className='text-xl font-semibold max-w-3xl mx-auto'>Easily pay your electricity, gas, water, internet, and other utility bills from one secure platform — anytime, anywhere. Fast, reliable, and built for your convenience.</p>
         </div>
-        <div className='grid grid-cols-6 '>
+        <div className='grid grid-cols-3 lg:grid-cols-6 '>
             <div className='flex flex-col items-center justify-center'>
             <img src='/sendMoney.jpg'></img>
             <button className='btn btn-outline btn-info'>Send Money</button>

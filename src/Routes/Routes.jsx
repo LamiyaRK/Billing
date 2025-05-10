@@ -9,6 +9,7 @@ import PrivateRoute from "../ContexApi/PrivateRoute";
 import UserInfo from "../Components/UserInfo";
 import Updateinfo from "../Components/Updateinfo";
 import Error from "../Components/Error";
+import Loadin from "../Components/Loadin";
 
 const router=createBrowserRouter([
     {
@@ -23,11 +24,14 @@ const router=createBrowserRouter([
             {
                 path:'/bills',
               element:<PrivateRoute><Bills></Bills></PrivateRoute>,
-                loader:()=>fetch('/Bills.json')
+                loader:()=>fetch('/Bills.json'),
+                 hydrateFallbackElement:<Loadin></Loadin>
+
             },
             {path:'/billsdetails/:id',
                 element:<PrivateRoute><BillCardDetails></BillCardDetails></PrivateRoute>,
-                loader:()=>fetch('/Bills.json')
+                loader:()=>fetch('/Bills.json'),
+                hydrateFallbackElement:<Loadin></Loadin>
 
             },
             {

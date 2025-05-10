@@ -1,13 +1,15 @@
 import React from 'react';
 import Navb from '../Components/Navb';
-import { Outlet } from 'react-router';
+import { Outlet, useNavigate } from 'react-router';
 import Footer from '../Components/Footer';
+import Loadin from '../Components/Loadin';
 
 const HomeLayout = () => {
+    const { state }=useNavigate()
     return (
         <div >
             <Navb></Navb>
-            <Outlet></Outlet>
+           {state=="loading"?<Loadin></Loadin>:<Outlet></Outlet>} 
             <Footer></Footer>
         </div>
     );

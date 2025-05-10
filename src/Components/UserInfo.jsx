@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 const UserInfo = () => {
     const {user}=use(AuthContext)
-    console.log(user)
+   
     return (
         <div className='w-11/12 mx-auto my-30'>
             <div class="card   shadow-sm bg-primary text-accent">

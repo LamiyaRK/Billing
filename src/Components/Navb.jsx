@@ -23,7 +23,7 @@ const Navb = () => {
         type:'success'
        })
       ).catch(error=>
-        console.log(error)
+        toast(error)
       )
     }
     return (

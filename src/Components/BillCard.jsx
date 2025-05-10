@@ -6,9 +6,9 @@ import { AuthContext } from '../ContexApi/AuthProvider';
 import { IoCheckbox } from 'react-icons/io5';
 
 const BillCard = ({da}) => {
-   // console.log(da)
+   
    const {adata}=use(AuthContext)
-  console.log(adata)
+ 
       const {id,bill_type,icon,organization,amount,duedate}=da
       const stat=adata?.find(ada=>ada==id)
     return (

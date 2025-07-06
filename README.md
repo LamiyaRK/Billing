@@ -60,7 +60,7 @@ The goal of BillEase is to digitize and streamline bill payment, allowing users 
 ⚙️ How to Run Locally
 🔧 Client Setup
 
-git clone https://github.com/your-username/bill-ease-client.git
+git clone https://github.com/LamiyaRK/bill-ease-client.git
 cd bill-ease-client
 npm install
 npm run dev
